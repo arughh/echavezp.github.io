@@ -1,53 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My IT Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal Portfolio Website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!--- box icons link --->
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--- remix icons link --->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!--- google fonts link --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>My IT Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm [Your Name], an IT professional specializing in [Your Specialization]. I have experience in [brief description of your experience].</p>
-    </section>
+	<!--- header --->
+	<header>
+		<a href="#" class="logo"><img src=""></a>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
-            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
-            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
-        </div>
-        <!-- Add more projects as needed -->
-    </section>
+		<ul class="menulist">
+			<a href="#home" class="active">Home</a>
+			<a href="#about">About Me</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#contact">Contact</a>
+		</ul>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourusername" target="_blank">yourusername</a></p>
-    </section>
+		<div class="menu-right">
+			<a href="#" class="menu-btn">
+				<span>Let's Talk</span>
+				<i class="ri-message-3-line"></i>
+			</a>
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+	</header>
 
-    <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-    </footer>
+	<!--- home --->
+	<section class="home" id="home">
+		<div class="home-text">
+			<a href="#" class="h-line">
+				<i class="ri-shining-2-line"></i>
+				<span>Xavier University - Ateneo de Cagayan </span>
+			</a>
+			<h1>Arabella Jean Echavez <br> <span class="input"></span></h1>
+			<h4></h4>
+			<div class="social-icons">
+				<a href="https://www.instagram.com/aerughh?igsh=MW13czNrbWJpdmoxZQ%3D%3D&utm_source=qr" target="_blank"><i class="ri-instagram-line"></i></a>
+				<a href="https://www.facebook.com/abby.ardonechavez/" target="_blank"><i class="ri-facebook-fill"></i></a>
+				<a href="https://www.linkedin.com/in/arabella-echavez-66ab2a219" target="_blank"><i class="ri-linkedin-box-line"></i></a>
+			</div>
 
-    <script src="script.js"></script>
+			<div class="h-btn">
+				<a href="#portfolio" class="btn1">
+					Projects
+					<i class="ri-arrow-right-s-line"></i>
+				</a>
+
+				<a href="https://drive.google.com/file/d/1PI8Sq16VfxL-9AAcOzNjSf-iEMym13W5/view?usp=sharing" class="btn2" download>
+					Download CV
+					<i class="ri-download-2-line"></i>
+				</a>
+
+			</div>
+		</div>
+	</section>
+
+	<!--- ABOUTTTT MEEEEEE --->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="img/pic2.jpg">
+		</div>
+
+		<div class="about-text">
+			<a href="#" class="h-line">
+				<i class="ri-shining-2-line"></i>
+				<span>About!</span>
+			</a>
+			<h2>More <span> About Me</span></h2>
+			<h5>A fourth year Information technology student at Ateneo de Cagayan, Xavier University. With a
+				developing skills in the field of basic web development and UI designs with the projects that
+				has help me build my character as a student. As a student intern, I am enthusiastic about the
+				opportunity to apply and gain knowledge at your company and eager to gain hands-on
+				experience in the field</h5>
+			<p></p>
+
+			
+
+				<a href="https://drive.google.com/file/d/1PI8Sq16VfxL-9AAcOzNjSf-iEMym13W5/view?usp=sharing" class="btn2" download>
+					Download CV
+					<i class="ri-download-2-line"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!--- services --->
+	<section class="services" id="services">
+		<div class="services-left">
+			<a href="#" class="h-line">
+				<i class="ri-shining-2-line"></i>
+				<span>My Services!</span>
+			</a>
+			<h2>What  <span>Can I Do</span></h2>
+			<p>I have the basic background  for web development {CSS,HTML,Bootstrap}, I have experience with the use of HTML and CSS for structuring web content and css for styling web pages. I also have the experience of  UI/UX Design. And I have great experience with Microsoft Office tools like word, excel and powerpoint.</p>
+		</div>
+
+		<div class="services-right">
+			<div class="box">
+				<div class="box-icon">
+					<i class="ri-brush-line"></i>
+				</div>
+
+				<div class="box-text">
+					<h5>Design</h5>
+					<p>Within my coursework I have experience the use of designing in such platforms.</p>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="box-icon">
+					<i class="ri-macbook-line"></i>
+				</div>
+
+				<div class="box-text">
+					<h5>Development</h5>
+					<p>Within my coursework, I have developed systems, websites and pages</p>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="box-icon">
+					<i class="ri-code-s-slash-line"></i>
+				</div>
+
+				<div class="box-text">
+					<h5>Development</h5>
+					<p>Within my coursework, I have developed systems, websites and pages</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--- portfolio --->
+	<section class="portfolio" id="portfolio">
+		<div class="mid-text">
+			<a href="#" class="h-line">
+				<i class="ri-shining-2-line"></i>
+				<span>Portfolio!</span>
+			</a>
+			<h2>My Latest <span>Projects</span></h2>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="row">
+				<div class="row-img">
+					<img src="img/website1.png">
+				</div>
+
+				<div class="row-in">
+					<div class="row-left">
+						<h3>Website Design</h3>
+						<h6></h6>
+					</div>
+					<div class="row-right">
+						<a href="#"><i class="ri-arrow-right-line"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="row-img">
+					<img src="img/landingpage.png">
+				</div>
+
+				<div class="row-in">
+					<div class="row-left">
+						<h3>Landing Page</h3>
+						<h6></h6>
+					</div>
+					<div class="row-right">
+						<a href="#"><i class="ri-arrow-right-line"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="row-img">
+					<img src="img/beach.png">
+				</div>
+
+				<div class="row-in">
+					<div class="row-left">
+						<h3>Website Design</h3>
+						<h6>   </h6>
+					</div>
+					<div class="row-right">
+						<a href="#"><i class="ri-arrow-right-line"></i></a>
+					</div>
+
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--- contact --->
+	<section class="contact" id="contact">
+		<div class="contact-main">
+			<a href="#" class="h-line">
+				<i class="ri-shining-2-line"></i>
+				<span>Contact!</span>
+			</a>
+			<h2>Contact <span> Me! </span></h2>
+
+			<div class="email">
+				<p>Email:</p>
+				<h6>echavezarabella@gmail.com</h6>
+			</div>
+
+			<div class="num">
+				<p>Call or Whatsapp:</p>
+				<h6>63+ 9085961115</h6>
+			</div>
+
+			<div class="social-icons">
+				<a href="https://www.instagram.com/aerughh?igsh=MW13czNrbWJpdmoxZQ%3D%3D&utm_source=qr" target="_blank"><i class="ri-instagram-line"></i></a>
+				<a href="https://www.facebook.com/abby.ardonechavez/" target="_blank"><i class="ri-facebook-fill"></i></a>
+				<a href="https://www.linkedin.com/in/arabella-echavez-66ab2a219" target="_blank"><i class="ri-linkedin-box-line"></i></a>
+			</div>
+		</div>
+
+		
+
+	<div class="footer">
+		<div class="copyright">
+			<p></p>
+		</div>
+		<a href="#home" class="scroll-top">
+			<i class="ri-arrow-up-s-line"></i>
+		</a>
+	</div>
+
+	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+	<!--- js file --->
+	<script src="js/script.js"></script>
+
 </body>
 </html>
